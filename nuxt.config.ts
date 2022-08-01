@@ -3,14 +3,12 @@ import { execaCommand } from 'execa'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  vite: {
-    build: {
-      rollupOptions: {
-        inlineDynamicImports: true,
-      },
-    },
-  },
   hooks: {
+    'vite:extendConfig': async (config, { isServer }) => {
+      if (isServer) {
+        config.build.rollupOptions.inlineDynamicImports = true
+      }
+    },
     'nitro:init'(nitro) {
       nitro.hooks.hook('compiled', async () => {
         await execaCommand(
