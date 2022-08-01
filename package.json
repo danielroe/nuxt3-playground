@@ -8,17 +8,8 @@
   },
   "devDependencies": {
     "execa": "^6.1.0",
-    "nuxt": "3.0.0-rc.5",
+    "nuxt": "3.0.0-rc.6",
     "serve-static": "^1.15.0",
     "unimport": "0.2.10"
-  },
-  "resolutions": {
-    "nuxt": "3.0.0-rc.5",
-    "nuxi": "3.0.0-rc.5",
-    "@nuxt/vite-builder": "3.0.0-rc.5",
-    "@nuxt/kit": "3.0.0-rc.5",
-    "@nuxt/schema": "3.0.0-rc.5",
-    "vite": "2.9.14",
-    "@nuxt/ui-templates": "^0.1.1"
   }
 }
