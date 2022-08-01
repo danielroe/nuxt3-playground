@@ -8,6 +8,12 @@ export default defineNuxtConfig({
       if (isServer) {
         config.build.rollupOptions.inlineDynamicImports = true
       }
+      console.log({
+        plugin: config.plugins.find(p => p.name === 'nuxt:composable-keys'),
+      })
+      config.plugins = config.plugins.filter(
+        p => p.name !== 'nuxt:composable-keys'
+      )
     },
     'nitro:init'(nitro) {
       nitro.hooks.hook('compiled', async () => {
