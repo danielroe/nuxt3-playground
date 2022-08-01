@@ -8,14 +8,14 @@
   },
   "devDependencies": {
     "execa": "^6.1.0",
-    "nuxt": "3.0.0-rc.1",
+    "nuxt": "3.0.0-rc.3",
     "serve-static": "^1.15.0"
   },
   "resolutions": {
-    "nuxt": "3.0.0-rc.1",
-    "nuxi": "3.0.0-rc.1",
-    "@nuxt/vite-builder": "3.0.0-rc.1",
-    "@nuxt/kit": "3.0.0-rc.1",
-    "@nuxt/schema": "3.0.0-rc.1"
+    "nuxt": "3.0.0-rc.3",
+    "nuxi": "3.0.0-rc.3",
+    "@nuxt/vite-builder": "3.0.0-rc.3",
+    "@nuxt/kit": "3.0.0-rc.3",
+    "@nuxt/schema": "3.0.0-rc.3"
   }
 }
